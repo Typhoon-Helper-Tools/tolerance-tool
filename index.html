@@ -60,7 +60,8 @@
         let step = 1/Math.pow(10, max_decimals);
         
         correct_values = []
-        for (let i = -tolerance; i <= tolerance; i += step) {
+        debugger;
+        for (let i = -(+tolerance); i <= (+tolerance) + (+step); i += step) {
             let val = Math.round(((+correct) + (+i)) * Math.pow(10, max_decimals)) / Math.pow(10, max_decimals);
             correct_values.push(val.toString());
             if (Number.isInteger(val)) {
