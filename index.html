@@ -61,7 +61,7 @@
         
         correct_values = []
         debugger;
-        for (let i = -(+tolerance); i <= (+tolerance) + (+step); i += step) {
+        for (let i = -(+tolerance); i <= (+tolerance) + (+step/2); i += step) {
             let val = Math.round(((+correct) + (+i)) * Math.pow(10, max_decimals)) / Math.pow(10, max_decimals);
             correct_values.push(val.toString());
             if (Number.isInteger(val)) {
